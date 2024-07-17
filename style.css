@@ -1,0 +1,21 @@
+.ball {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #FF5722; /* Orange color */
+    position: absolute; /* To position the ball */
+    top: 0; /* Initial position at the top */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    animation: bounce 0.5s cubic-bezier(0.5, 0.05, 1, 0.5) infinite alternate;
+  }
+
+  @keyframes bounce {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(200px); /* Bounce height */
+    }
+  }
+  
